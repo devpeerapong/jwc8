@@ -1,7 +1,8 @@
-var gulp   = require('gulp');
-var css    = require('gulp-clean-css');
-var html   = require('gulp-htmlmin');
+var gulp = require('gulp');
+var css = require('gulp-clean-css');
+var html = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
+var bs = require('browser-sync').create();
 
 gulp.task('js', function() {
     return gulp.src('src/js/*.js')
@@ -24,6 +25,14 @@ gulp.task('html', function() {
 gulp.task('fonts', function() {
     return gulp.src('src/fonts/*.*')
         .pipe(gulp.dest(__dirname + '/dist/fonts'));
+});
+
+gulp.task('dev', function() {
+    bs.watch("src/*.php").on("change", bs.reload);
+    bs.watch("src/css/*.css").on("change", bs.stream);
+    bs.init({
+        proxy: "jwc8.dev"
     });
+})
 
 gulp.task('default', ['js', 'css', 'html', 'fonts']);

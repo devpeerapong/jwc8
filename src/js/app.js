@@ -14,7 +14,6 @@
         var hours = $('#hours');
         var minutes = $('#minutes');
         var seconds = $('#seconds');
-        var prevMinute = 0;
 
         countdown
             .countdown('2016/3/14')

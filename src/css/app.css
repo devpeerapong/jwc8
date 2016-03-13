@@ -141,7 +141,7 @@ body {
     display: inline-block;
     float: right;
     height: 100%;
-    color: rgb(205,212,206);
+    color: #cbd5cf;
     cursor: pointer;
 }
 
@@ -151,7 +151,7 @@ body {
 
 @media (min-width: 768px) {
     .countdown {
-        margin-bottom: 10vh;
+        margin-bottom: 40px;
     }
     .text,
     .title-text {
@@ -220,9 +220,6 @@ body {
     }
     .title-text{
         margin: 10px;
-    }
-    .countdown {
-        margin-bottom: 40px;
     }
     .subscript-form {
         width: 60%;

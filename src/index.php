@@ -17,7 +17,7 @@
 <body>
     <div id="pre-loader"></div>
     <div class="container">
-      <img class="logo" src="http://placehold.it/400x120" />
+      <img class="logo" src="images/logo.png" />
       <h1 class="title-text">พบกันเร็ว ๆ นี้</h1>
       <div id="countdown" class="countdown">
         <span class="box wow fadeInUp" data-wow-delay="0.5s">
@@ -47,9 +47,11 @@
       </div>
       <div class="footer">
         <div class="camp-name">2016 @ Junior Webmaster Camp</div>
-        <a class="social-link" href="#">Line</a>
-        <a class="social-link" href="#">Twitter</a>
-        <a class="social-link" href="#">Facebook</a>
+        <a class="social-link" href="http://line.me/ti/p/@jwcth"><i class="icon-social-line"></i></a>
+        <a class="social-link" href="https://www.youtube.com/channel/UCvoljJxOdeqTlguPsh9nHVg"><i class="fa fa-youtube"></i></a>
+        <a class="social-link" href="https://www.instagram.com/jwcth"><i class="fa fa-instagram"></i></a>
+        <a class="social-link" href="https://twitter.com/jwcth"><i class="fa fa-twitter"></i></a>
+        <a class="social-link" href="https://www.facebook.com/jwcth"><i class="fa fa-facebook"></i></a>
       </div>
     </div>
 
